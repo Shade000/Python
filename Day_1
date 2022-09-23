@@ -12,3 +12,12 @@ print("New lines can be created with a backslash and n.")
 #Exercise 3 - Input Function
 n = input("What is your name?")
 print(len(n))
+
+#Exercise 4 - Variables
+a = input("a: ")
+b = input("b: ")
+c=a
+a=b
+b=c
+print("a: " + a)
+print("b: " + b)
