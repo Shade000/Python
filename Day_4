@@ -1,0 +1,63 @@
+import random
+
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+
+#Write your code below this line 👇
+print("Welcome to game rock-paper-scissors")
+people = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n"))
+
+computer = random.randint(0, 2)
+choice = [rock, paper, scissors]
+if people < 0 or people >= 3 :
+  print("Start again. You wrote wrong number!")
+else:
+  print(choice[people])
+  print("Computer chose:")
+  print(choice[computer])
+
+
+  if people == 0 and computer == 2:
+    print("You win!")
+  elif people == 2 and computer == 1:
+    print("You win!")
+  elif people == 1 and computer == 0:
+    print("You win!")
+    
+  if computer == 0 and people == 2:
+    print("You lose!")
+  elif computer == 2 and people == 1:
+    print("You lose!")
+  elif computer == 1 and people == 0:
+    print("You lose!")
+  
+  if computer == 0 and people == 0:
+    print("It's a draw!")
+  elif computer == 1 and people == 1:
+    print("It's a draw!")
+  elif computer == 2 and people == 2:
+    print("It's a draw!")
