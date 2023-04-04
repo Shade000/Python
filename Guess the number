@@ -1,0 +1,12 @@
+import random 
+
+number_comp = random.randint(1, 50)
+number = 0
+
+while(number != number_comp):
+    number = int(input("Введите число от 1 до 50\n"))
+    if number > number_comp:
+        print(f"Загаданое число меньше. Введите число меньше {number}")
+    elif number < number_comp:
+        print(f"Загаданое число больше. Введите число больше {number}")
+print(f"Число {number_comp} отгадно")
