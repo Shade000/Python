@@ -1,0 +1,20 @@
+import random
+
+flag = True
+
+while flag:
+    choose = input("Сделайте выбор R - камень, S - ножницы, P - бумага\n")
+    comp = random.choice(['R', 'S', 'P'])
+    print(f"Вы выбрали {choose}")
+    print(f"Комп выбрал {comp}")
+    if choose == comp:
+        print("Ничья")
+    elif choose == "R" and comp == "S" or choose == "S" and comp == "P" or choose == "P" and comp == "R":
+        print("Ты выиграл")
+    elif choose == "S" and comp == "R" or choose == "P" and comp == "S" or choose == "R" and comp == "P":
+        print("Выиграл комп")
+    finish = input("Хотите продолжить Y - да, N - нет\n")
+    if finish == "N":
+        flag = False
+    else:
+        continue
