@@ -1,0 +1,11 @@
+def whos_first(p1, p2):
+    f1 = p1.find("B")
+    f2 = p2.find("B")
+    if f1>f2:
+        return "p2"
+    elif f1==f2:
+        return "tie"
+    else:
+        return "p1"
+        
+whos_first("   Bang!        ", "        Bang!   ") 
