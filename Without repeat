@@ -1,0 +1,15 @@
+def calc_dice_scores(lst):
+    i = 0
+    sum = 0
+    temp = 0
+    while i < len(lst):
+        if lst[i][0] == lst[i][1]:
+            sum = 0
+            break
+        else:
+            temp = lst[i][0] + lst[i][1]
+        sum = sum + temp
+        i += 1
+    return sum
+    
+calc_dice_scores([(1, 2), (3, 3), (5, 6)])
