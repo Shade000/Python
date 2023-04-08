@@ -1,0 +1,4 @@
+def any_duplicates(square):
+    return len({i for x in square for i in x}) < 9
+
+any_duplicates([[1, 3, 2], [9, 7, 8], [4, 5, 6]])
