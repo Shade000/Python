@@ -1,0 +1,21 @@
+sticks = 10
+while sticks != 0:
+    move = int(input("Сколько берете палочек игрок 1 (от 1 до 3)?\n"))
+    if move < 1 or move > 3:
+        print("Некорректный ввод")
+        continue
+    sticks = sticks - move
+    print(f"Осталось {sticks} палочек")
+    if(sticks==0):
+        print("Игрок 1 проиграл")
+        break
+    
+    move = int(input("Сколько берете палочек игрок 2 (от 1 до 3)?\n"))
+    if move < 1 or move > 3:
+        print("Некорректный ввод")
+        continue
+    sticks = sticks - move
+    print(f"Осталось {sticks} палочек")
+    if(sticks==0):
+        print("Игрок 2 проиграл")
+        break
